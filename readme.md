@@ -37,7 +37,6 @@
 Hpi8V2xwFHogpt7r
  -->
  <!-- deOSuMDIopcf7EnB -->
- <!-- mongodb+srv://Natala:deOSuMDIopcf7EnB@cluster0.mlqxyxm.mongodb.net/test -->
 
 <!-- DB_HOST =
 "mongodb+srv://Natala:deOSuMDIopcf7EnB@cluster0.mlqxyxm.mongodb.net/db-contacts?retryWrites=true&w=majority" -->

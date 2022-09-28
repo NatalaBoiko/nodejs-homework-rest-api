@@ -5,9 +5,9 @@ const updateById = require("./updateById");
 const removeById = require("./removeById");
 
 module.exports = {
-  getAll,
-  getByid,
+  // getAll,
+  // getByid,
   add,
-  updateById,
-  removeById,
+  // updateById,
+  // removeById,
 };
