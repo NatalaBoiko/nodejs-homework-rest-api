@@ -22,6 +22,7 @@ const userSchema = new Schema(
       default: "starter",
     },
     token: String,
+    default: "",
   },
   { versionKey: false, timestamps: true }
 );
