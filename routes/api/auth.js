@@ -18,6 +18,10 @@ router.get("/current", authenticate, ctrlWrapper(ctrl.getCurrent));
 
 router.get("/logout", authenticate, ctrlWrapper(ctrl.logout));
 
-router.patch("/:id/subscription", ctrlWrapper(ctrl.updateSub));
+router.patch(
+  "/:id/subscription",
+  validation(schemas.subscrSchema),
+  ctrlWrapper(ctrl.updateSub)
+);
 
 module.exports = router;

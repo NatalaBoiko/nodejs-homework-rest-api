@@ -37,9 +37,7 @@ const registerSchema = Joi.object({
     .min(6)
     .required()
     .messages({ "any.required": "Missing field password" }),
-  subscription: Joi.string().valid(...subscription),
-  // .required()
-  // .messages({ "any.required": "Missing field subscription" }),
+  subscription: Joi.string(),
 });
 
 const loginSchema = Joi.object({
@@ -52,8 +50,15 @@ const loginSchema = Joi.object({
     .messages({ "any.required": "Missing field password" }),
 });
 
+const subscrSchema = Joi.object({
+  subscription: Joi.string()
+    .valid(...subscription)
+    .required()
+    .messages({ "any.required": "Missing field subscription" }),
+});
+
 const User = model("user", userSchema);
-const schemas = { registerSchema, loginSchema };
+const schemas = { registerSchema, loginSchema, subscrSchema };
 
 module.exports = {
   User,
